@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D365FCA925BA89C100EBEB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCA825BA89C100EBEB17 /* AppDelegate.swift */; };
-		D365FCAB25BA89C100EBEB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCAA25BA89C100EBEB17 /* ContentView.swift */; };
+		D365FCAB25BA89C100EBEB17 /* ARControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */; };
 		D365FCAD25BA89C100EBEB17 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D365FCAC25BA89C100EBEB17 /* Experience.rcproject */; };
 		D365FCAF25BA89C200EBEB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365FCAE25BA89C200EBEB17 /* Assets.xcassets */; };
 		D365FCB225BA89C200EBEB17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365FCB125BA89C200EBEB17 /* Preview Assets.xcassets */; };
+		D365FCBB25BA8B9E00EBEB17 /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCBA25BA8B9E00EBEB17 /* ARController.swift */; };
+		D365FCC025BA8D6600EBEB17 /* ChooseUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */; };
+		D365FCC325BA8EA000EBEB17 /* NetworkCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */; };
+		D365FCC725BAA37700EBEB17 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCC625BAA37700EBEB17 /* Messages.swift */; };
+		D365FCCB25BB3E9E00EBEB17 /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D365FCA525BA89C100EBEB17 /* Bumper Balls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bumper Balls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D365FCA825BA89C100EBEB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D365FCAA25BA89C100EBEB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARControllerView.swift; sourceTree = "<group>"; };
 		D365FCAC25BA89C100EBEB17 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		D365FCAE25BA89C200EBEB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D365FCB125BA89C200EBEB17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D365FCB325BA89C200EBEB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D365FCBA25BA8B9E00EBEB17 /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
+		D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUsernameView.swift; sourceTree = "<group>"; };
+		D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCommunicator.swift; sourceTree = "<group>"; };
+		D365FCC625BAA37700EBEB17 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,15 @@
 			isa = PBXGroup;
 			children = (
 				D365FCA825BA89C100EBEB17 /* AppDelegate.swift */,
-				D365FCAA25BA89C100EBEB17 /* ContentView.swift */,
+				D365FCBA25BA8B9E00EBEB17 /* ARController.swift */,
+				D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */,
+				D365FCC625BAA37700EBEB17 /* Messages.swift */,
+				D365FCBE25BA8CB300EBEB17 /* Views */,
 				D365FCAC25BA89C100EBEB17 /* Experience.rcproject */,
 				D365FCAE25BA89C200EBEB17 /* Assets.xcassets */,
 				D365FCB325BA89C200EBEB17 /* Info.plist */,
 				D365FCB025BA89C200EBEB17 /* Preview Content */,
+				D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */,
 			);
 			path = "Bumper Balls";
 			sourceTree = "<group>";
@@ -70,6 +84,15 @@
 				D365FCB125BA89C200EBEB17 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D365FCBE25BA8CB300EBEB17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */,
+				D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D365FCAB25BA89C100EBEB17 /* ContentView.swift in Sources */,
+				D365FCBB25BA8B9E00EBEB17 /* ARController.swift in Sources */,
+				D365FCCB25BB3E9E00EBEB17 /* MapEntity.swift in Sources */,
+				D365FCAB25BA89C100EBEB17 /* ARControllerView.swift in Sources */,
+				D365FCC025BA8D6600EBEB17 /* ChooseUsernameView.swift in Sources */,
+				D365FCC725BAA37700EBEB17 /* Messages.swift in Sources */,
 				D365FCA925BA89C100EBEB17 /* AppDelegate.swift in Sources */,
 				D365FCAD25BA89C100EBEB17 /* Experience.rcproject in Sources */,
+				D365FCC325BA8EA000EBEB17 /* NetworkCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
