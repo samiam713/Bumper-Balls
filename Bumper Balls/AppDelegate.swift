@@ -8,23 +8,16 @@
 import UIKit
 import SwiftUI
 
-let mainWindow = UIWindow(frame: UIScreen.main.bounds)
+fileprivate let mainWindow = UIWindow(frame: UIScreen.main.bounds)
 func toView<V: View>(_ view: V) {mainWindow.rootViewController = UIHostingController(rootView: view)}
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // Start the network communicator
-        serverConnection.start()
         
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ChooseUsernameView(errorMessage: nil)
-
-        // Use a UIHostingController as window root view controller.
-
-        toView(contentView)
+        appController = AppController()
+        
         mainWindow.makeKeyAndVisible()
         return true
     }
@@ -36,11 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        
+        // completely disconnect server and start from scratch
+        appController.tcpConn.stop()
+        appController.toLoggingIn(errorMessage: nil)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        print("establish connection back online")
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

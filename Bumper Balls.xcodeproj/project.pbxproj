@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D329C9F925BF711100F91BF7 /* TCPConn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329C9F825BF711100F91BF7 /* TCPConn.swift */; };
+		D33FE3BF25BFF31600358128 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33FE3BE25BFF31600358128 /* ViewExtensions.swift */; };
 		D365FCA925BA89C100EBEB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCA825BA89C100EBEB17 /* AppDelegate.swift */; };
 		D365FCAB25BA89C100EBEB17 /* ARControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */; };
 		D365FCAD25BA89C100EBEB17 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D365FCAC25BA89C100EBEB17 /* Experience.rcproject */; };
 		D365FCAF25BA89C200EBEB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365FCAE25BA89C200EBEB17 /* Assets.xcassets */; };
 		D365FCB225BA89C200EBEB17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365FCB125BA89C200EBEB17 /* Preview Assets.xcassets */; };
 		D365FCBB25BA8B9E00EBEB17 /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCBA25BA8B9E00EBEB17 /* ARController.swift */; };
-		D365FCC025BA8D6600EBEB17 /* ChooseUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */; };
-		D365FCC325BA8EA000EBEB17 /* NetworkCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */; };
+		D365FCC025BA8D6600EBEB17 /* LoggingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCBF25BA8D6600EBEB17 /* LoggingInView.swift */; };
+		D365FCC325BA8EA000EBEB17 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCC225BA8EA000EBEB17 /* AppController.swift */; };
 		D365FCC725BAA37700EBEB17 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCC625BAA37700EBEB17 /* Messages.swift */; };
-		D365FCCB25BB3E9E00EBEB17 /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */; };
+		D365FCCB25BB3E9E00EBEB17 /* ARMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365FCCA25BB3E9E00EBEB17 /* ARMap.swift */; };
+		D36D5EAE25C0FA4B00377DEC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D5EAD25C0FA4B00377DEC /* Utilities.swift */; };
+		D3B0929325BFC884009CD21E /* UndecidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0929225BFC884009CD21E /* UndecidedView.swift */; };
+		D3B0929C25BFE178009CD21E /* UndecidedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0929B25BFE178009CD21E /* UndecidedData.swift */; };
+		D3B092A025BFE230009CD21E /* LoggingInData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0929F25BFE230009CD21E /* LoggingInData.swift */; };
+		D3ECE7BE25C51CB300B68FC6 /* CircleControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECE7BD25C51CB300B68FC6 /* CircleControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D329C9F825BF711100F91BF7 /* TCPConn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPConn.swift; sourceTree = "<group>"; };
+		D33FE3BE25BFF31600358128 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D365FCA525BA89C100EBEB17 /* Bumper Balls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bumper Balls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D365FCA825BA89C100EBEB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARControllerView.swift; sourceTree = "<group>"; };
@@ -28,10 +37,15 @@
 		D365FCB125BA89C200EBEB17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D365FCB325BA89C200EBEB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D365FCBA25BA8B9E00EBEB17 /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
-		D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUsernameView.swift; sourceTree = "<group>"; };
-		D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCommunicator.swift; sourceTree = "<group>"; };
+		D365FCBF25BA8D6600EBEB17 /* LoggingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingInView.swift; sourceTree = "<group>"; };
+		D365FCC225BA8EA000EBEB17 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		D365FCC625BAA37700EBEB17 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
-		D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEntity.swift; sourceTree = "<group>"; };
+		D365FCCA25BB3E9E00EBEB17 /* ARMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMap.swift; sourceTree = "<group>"; };
+		D36D5EAD25C0FA4B00377DEC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D3B0929225BFC884009CD21E /* UndecidedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndecidedView.swift; sourceTree = "<group>"; };
+		D3B0929B25BFE178009CD21E /* UndecidedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndecidedData.swift; sourceTree = "<group>"; };
+		D3B0929F25BFE230009CD21E /* LoggingInData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingInData.swift; sourceTree = "<group>"; };
+		D3ECE7BD25C51CB300B68FC6 /* CircleControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +79,16 @@
 			isa = PBXGroup;
 			children = (
 				D365FCA825BA89C100EBEB17 /* AppDelegate.swift */,
-				D365FCBA25BA8B9E00EBEB17 /* ARController.swift */,
-				D365FCC225BA8EA000EBEB17 /* NetworkCommunicator.swift */,
 				D365FCC625BAA37700EBEB17 /* Messages.swift */,
+				D365FCC225BA8EA000EBEB17 /* AppController.swift */,
+				D329C9F825BF711100F91BF7 /* TCPConn.swift */,
+				D3B0929925BFD0D3009CD21E /* Substates */,
 				D365FCBE25BA8CB300EBEB17 /* Views */,
 				D365FCAC25BA89C100EBEB17 /* Experience.rcproject */,
 				D365FCAE25BA89C200EBEB17 /* Assets.xcassets */,
 				D365FCB325BA89C200EBEB17 /* Info.plist */,
 				D365FCB025BA89C200EBEB17 /* Preview Content */,
-				D365FCCA25BB3E9E00EBEB17 /* MapEntity.swift */,
+				D36D5EAD25C0FA4B00377DEC /* Utilities.swift */,
 			);
 			path = "Bumper Balls";
 			sourceTree = "<group>";
@@ -89,10 +104,24 @@
 		D365FCBE25BA8CB300EBEB17 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D365FCBF25BA8D6600EBEB17 /* LoggingInView.swift */,
+				D3B0929225BFC884009CD21E /* UndecidedView.swift */,
 				D365FCAA25BA89C100EBEB17 /* ARControllerView.swift */,
-				D365FCBF25BA8D6600EBEB17 /* ChooseUsernameView.swift */,
+				D33FE3BE25BFF31600358128 /* ViewExtensions.swift */,
+				D3ECE7BD25C51CB300B68FC6 /* CircleControlView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D3B0929925BFD0D3009CD21E /* Substates */ = {
+			isa = PBXGroup;
+			children = (
+				D3B0929F25BFE230009CD21E /* LoggingInData.swift */,
+				D3B0929B25BFE178009CD21E /* UndecidedData.swift */,
+				D365FCBA25BA8B9E00EBEB17 /* ARController.swift */,
+				D365FCCA25BB3E9E00EBEB17 /* ARMap.swift */,
+			);
+			path = Substates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,13 +194,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D365FCBB25BA8B9E00EBEB17 /* ARController.swift in Sources */,
-				D365FCCB25BB3E9E00EBEB17 /* MapEntity.swift in Sources */,
+				D365FCCB25BB3E9E00EBEB17 /* ARMap.swift in Sources */,
+				D36D5EAE25C0FA4B00377DEC /* Utilities.swift in Sources */,
+				D33FE3BF25BFF31600358128 /* ViewExtensions.swift in Sources */,
+				D3B092A025BFE230009CD21E /* LoggingInData.swift in Sources */,
 				D365FCAB25BA89C100EBEB17 /* ARControllerView.swift in Sources */,
-				D365FCC025BA8D6600EBEB17 /* ChooseUsernameView.swift in Sources */,
+				D365FCC025BA8D6600EBEB17 /* LoggingInView.swift in Sources */,
+				D3B0929325BFC884009CD21E /* UndecidedView.swift in Sources */,
+				D3B0929C25BFE178009CD21E /* UndecidedData.swift in Sources */,
+				D329C9F925BF711100F91BF7 /* TCPConn.swift in Sources */,
 				D365FCC725BAA37700EBEB17 /* Messages.swift in Sources */,
+				D3ECE7BE25C51CB300B68FC6 /* CircleControlView.swift in Sources */,
 				D365FCA925BA89C100EBEB17 /* AppDelegate.swift in Sources */,
 				D365FCAD25BA89C100EBEB17 /* Experience.rcproject in Sources */,
-				D365FCC325BA8EA000EBEB17 /* NetworkCommunicator.swift in Sources */,
+				D365FCC325BA8EA000EBEB17 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.samdonovan.Bumper-Balls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.samdonovan.Bumper-Balls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

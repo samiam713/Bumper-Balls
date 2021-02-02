@@ -23,32 +23,37 @@ enum ServerMessage {
         let Radius: Float64
     }
     
-    case gameState(GameStateJSON)
-    case startScanning
-    case joinFailedInactive
+    case gameState(GameStateJSON) // a
+    case startScanning(String)
+    case joinFailedInactive // c
     case joinFailedOtherJoined
     case duplicateUser
-    case opponentLeft
+    case opponentLeft // f
     case countDownTime(Int)
     case startGame
-    case clientWon
+    case clientWon // i
     case hostWon
     case countDownStart
     case goodUsername
     case opponentScanned
     case opponentPlayAgain
     case tenJoinable([String])
-        
+    
     init?(data: Data) {
         // guard let string = String(data: data, encoding: .utf8) else {return nil}
         guard let first = data.first else {return nil}
         switch first {
         case 97: // a
-            let jsonData = data.dropFirst(2)
-            guard let gameStateJSON = try? decoder.decode(GameStateJSON.self, from: jsonData) else {return nil}
-            self = .gameState(gameStateJSON)
+            let dataArray = data.split(whereSeparator: {$0 == space || $0 == newLine})
+            if dataArray.count >= 2 {
+                guard let gameStateJSON = try? decoder.decode(GameStateJSON.self, from: dataArray[1]) else {return nil}
+                self = .gameState(gameStateJSON)
+            } else {
+                return nil
+            }
         case 98: // b
-            self = .startScanning
+            guard let clientString = String(data: data.dropFirst(2).dropLast(), encoding: .utf8) else {return nil}
+            self = .startScanning(clientString)
         case 99:
             self = .joinFailedInactive
         case 100: // d
@@ -58,8 +63,13 @@ enum ServerMessage {
         case 102:
             self = .opponentLeft
         case 103:
-            guard let intString = String(data: data.dropFirst(2), encoding: .utf8), let int = Int(intString) else {return nil}
-            self = .countDownTime(int)
+            let dataArray = data.split(whereSeparator: {$0 == space || $0 == newLine})
+            if dataArray.count >= 2 {
+                guard let intString = String(data: dataArray[1], encoding: .utf8), let int = Int(intString) else {return nil}
+                self = .countDownTime(int)
+            } else {
+                return nil
+            }
         case 104:
             self = .startGame
         case 105:
@@ -88,7 +98,7 @@ enum ClientMessage {
     case accelerated(Vector) // 97 : a
     case hostGame
     case joinGame(String)
-    case doneScanning
+    case doneScanning // d
     case playAgain
     case requestHosts
     case reset // 103 : g
