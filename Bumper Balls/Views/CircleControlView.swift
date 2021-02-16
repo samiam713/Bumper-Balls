@@ -74,5 +74,9 @@ struct CircleControlView: View {
                 .position(x: proxy.x*0.5 + arController.xDragProp * proxy.maxDragDistance,
                           y: proxy.y - proxy.controlBoundaryDiameter*0.5 - arController.yDragProp*proxy.maxDragDistance)
         }
+        .onDisappear {
+            arController.xDragProp = .zero
+            arController.yDragProp = .zero
+        }
     }
 }

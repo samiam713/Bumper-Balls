@@ -9,7 +9,7 @@ import Foundation
 import RealityKit
 
 let initialRadius: Float = 0.5
-let ballRadius: Float = 0.05
+let ballRadius: Float = 0.025
 let initialHeight: Float = 1.0
 
 class ARMap: Entity {
@@ -49,6 +49,8 @@ class ARMap: Entity {
         
         // deal with spinner
         spinner.transform.translation = [0,ballRadius,0]
+        spinner.transform.scale.y *= ballRadius/0.05
+        
         ballTop.addChild(spinner)
         
         // deal with balls
@@ -69,6 +71,7 @@ class ARMap: Entity {
     func resetBallPositions() {
         hostBall.transform.translation = [0,ballRadius, initialRadius * 0.75]
         clientBall.transform.translation = [0,ballRadius, -initialRadius * 0.75]
+        spinner.transform.translation = [0,ballRadius,0]
     }
     
     // process game update
@@ -145,7 +148,7 @@ class Spinner: Entity {
             // guess and check zf
             let zi: Float = 1.0
             let zf: Float = 0.1
-            transform.scale = [1,1,zi+(zf-zi)*gameProp]
+            spinnerComponents[i].transform.scale = [1,1,zi+(zf-zi)*gameProp]
         }
     }
 }

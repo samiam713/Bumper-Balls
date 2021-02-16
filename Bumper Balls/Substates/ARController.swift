@@ -96,7 +96,7 @@ class ARController: MessageReceiver, ObservableObject {
     
     // takes our drag proportions and spits out a DV in game space for our balls
     func getCurrentDV(dt: Float) -> Vector {
-        let maxAcceleration: Float = 0.5
+        let maxAcceleration: Float = 1.0
         let yVec = cameraToBallInGameSpace(host: hosting)
         let xVec: simd_float2 = [-yVec.y,yVec.x]
         let gameAcceleration: simd_float2 = Float(yDragProp)*yVec + Float(xDragProp)*xVec
